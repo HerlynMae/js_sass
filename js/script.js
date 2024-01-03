@@ -8,7 +8,7 @@ var slider = tns({
   navPosition: "bottom",
 });
 
-const accordion = document.querySelectorAll(".accordion__tab h4");
+const accordions = document.querySelectorAll("h4");
 
 accordions.forEach((accordion) => {
   accordion.addEventListener("click", () => {

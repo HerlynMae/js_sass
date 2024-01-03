@@ -571,6 +571,7 @@ img {
 }
 .accordion__tab {
   max-width: 40rem;
+  margin-bottom: 3rem;
 }
 .accordion__tab h4 {
   padding: 0.2rem 1rem;
@@ -581,15 +582,25 @@ img {
 .accordion__tab i {
   padding: 0.2rem 1rem;
   float: right;
+  transition: all 0.5s;
 }
 .accordion__tab i.open {
-  rotate: 180deg;
+  rotate: 540deg;
+  transition: all 0.5s;
 }
 .accordion__tab p {
+  background-color: #cccccc;
   font-size: 1rem;
-  padding: 1rem 1rem;
   text-align: justify;
   color: #303131;
+  max-height: 0;
+  height: auto;
+  overflow: hidden;
+}
+.accordion__tab p.open {
+  padding: 1rem 1rem;
+  background-color: #cccccc;
+  max-height: 150rem;
 }
 .accordion__img img {
   width: 600px;
