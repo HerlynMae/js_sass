@@ -1,0 +1,69 @@
+@use "./colors" as *;
+
+$colors: (
+  "dark": $clr--dark,
+  "dark-gray": $clr--dark--gray,
+  "light": $clr--light,
+  "light-gray": $clr--light--gray,
+  "primary": $clr--primary,
+);
+
+@each $key, $val in $colors {
+  .text {
+    &--#{$key} {
+      color: $val;
+    }
+  }
+  .bg {
+    &--#{$key} {
+      background-color: $val;
+    }
+  }
+}
+
+$alignments: center, right, left, justify;
+@each $alignment in $alignments {
+  .text--#{$alignment} {
+    text-align: $alignment;
+  }
+}
+
+$positions: absolute, relative, static, fixed;
+@each $position in $positions {
+  .position--#{$position} {
+    position: $position;
+  }
+}
+
+$justifys: center, space-between, space-around;
+@each $justify in $justifys {
+  .justify--#{$justify} {
+    justify-content: $justify;
+  }
+}
+
+$items: center, end;
+@each $item in $items {
+  .items--#{$item} {
+    align-items: $item;
+  }
+}
+
+$displays: block, none, flex, grid;
+@each $display in $displays {
+  .display--#{$display} {
+    display: $display;
+  }
+}
+
+@for $i from 0 through 20 {
+  .mb--#{$i} {
+    margin-bottom: $i + rem;
+  }
+  .mt--#{$i} {
+    margin-top: $i + rem;
+  }
+  .ml--#{$i} {
+    margin-left: $i + rem;
+  }
+}

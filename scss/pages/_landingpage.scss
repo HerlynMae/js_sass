@@ -1,0 +1,78 @@
+@use "../abstract/" as *;
+// banner
+.banner {
+  padding: 3rem 0;
+  &__wrapper {
+    @include grid(2, 3);
+    align-items: center;
+  }
+  &__text h1 {
+    font-size: 3rem;
+    color: $clr--dark;
+  }
+}
+.my-slider {
+  img {
+    @include imgFit(600px, 400px);
+  }
+}
+
+.tns-outer {
+  overflow: hidden;
+  max-width: 40rem;
+
+  & > button {
+    display: none;
+  }
+}
+
+.tns-nav {
+  text-align: center;
+  button {
+    margin: 0.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    border: none;
+  }
+  .tns-nav-active {
+    background-color: $clr--dark;
+  }
+}
+
+// accordion
+.accordion {
+  padding: 3rem 0;
+  &__wrapper {
+    @include grid(2, 3);
+    align-items: center;
+  }
+  &__tab {
+    max-width: 40rem;
+
+    h4 {
+      padding: 0.2rem 1rem;
+      background-color: $clr--light--gray;
+      color: $clr--dark--gray;
+      font-size: 1.5rem;
+    }
+    i {
+      padding: 0.2rem 1rem;
+      float: right;
+    }
+    i.open {
+      rotate: 180deg;
+    }
+    p {
+      font-size: 1rem;
+      padding: 1rem 1rem;
+      text-align: justify;
+      color: $clr--dark--gray;
+    }
+  }
+  &__img {
+    img {
+      @include imgFit(600px, 400px);
+    }
+  }
+}

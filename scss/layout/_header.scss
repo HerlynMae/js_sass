@@ -1,0 +1,22 @@
+@use "../abstract/colors" as *;
+// header
+.header {
+  padding: 2rem 0;
+  background-color: $clr--dark--gray;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    ul {
+      display: flex;
+      li {
+        margin-right: 1rem;
+        a {
+          color: $clr--light;
+        }
+      }
+    }
+  }
+}

@@ -19,6 +19,14 @@
   }
 }
 
+//for imgFit
+@mixin imgFit($width: 300px, $height: 300px) {
+  width: $width;
+  height: $height;
+  object-fit: cover;
+  object-position: center center;
+}
+
 //for responsiveness with specific value
 
 $mobile: 320px;
