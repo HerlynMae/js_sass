@@ -609,4 +609,82 @@ img {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+}
+
+.tabs {
+  padding: 3rem 0;
+}
+.tabs__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3;
+  align-items: center;
+}
+.tabs__info {
+  max-width: 40rem;
+}
+.tabs__info ul li {
+  padding: 0.2rem 1rem;
+  background-color: #cccccc;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.tabs__info ul li.active {
+  background-color: #303131;
+  color: #cccccc;
+}
+.tabs__info ul li a {
+  color: #fff;
+}
+.tabs__image {
+  display: none;
+}
+.tabs__image img {
+  width: 600px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.tabs__image.active {
+  display: block;
+}
+
+.progress {
+  padding: 3rem 0;
+}
+.progress__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.progress__content {
+  margin-bottom: 3rem;
+}
+.progress__content h4 {
+  color: #2b2b2b;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+  font-weight: 600;
+}
+.progress__bar {
+  background-color: #cccccc;
+  position: relative;
+  width: 35rem;
+  height: 3rem;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0);
+}
+.progress__bar span {
+  padding: 0 3rem;
+  color: #cccccc;
+  position: absolute;
+  border-radius: 1rem;
+  height: 100%;
+  text-align: center;
+  background-color: #2b2b2b;
+  transition: all;
 }/*# sourceMappingURL=main.css.map */
